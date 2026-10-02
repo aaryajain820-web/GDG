@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #f9e7e5;
+  color: #563747;
+}
+
+/* ---------- PAGE 1 ---------- */
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: 'Gloock', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #6f3d57;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #8b6575;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  background: #fff8f7;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid #efd4d2;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #6f3d57;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-section label {
+  font-weight: bold;
+  color: #6f3d57;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #d9b9bd;
+  border-radius: 12px;
+  background: white;
+  color: #563747;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #a96b83;
+}
+
+.preview-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.qr-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 24px;
+  border: 2px solid #e5c4c8;
+}
+
+.continue-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #6f3d57;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.continue-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ---------- PAGE 2 ---------- */
+
+.design-page {
+  width: min(1000px, 90%);
+  margin: 40px auto;
+}
+
+.design-page h1 {
+  font-family: 'Gloock', serif;
+  font-size: 42px;
+  text-align: center;
+  color: #6f3d57;
+  margin-bottom: 40px;
+}
+
+.design-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.qr-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 30px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(111, 61, 87, 0.12);
+}
+
+.design-controls {
+  padding: 30px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(111, 61, 87, 0.12);
+}
+
+.design-controls h2 {
+  margin-top: 0;
+  font-family: 'Gloock', serif;
+  color: #6f3d57;
+}
+
+.presets {
+  margin-bottom: 30px;
+}
+
+.presets h3 {
+  margin-bottom: 15px;
+  color: #6f3d57;
+}
+
+.preset-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.preset {
+  width: 100%;
+  border: 1px solid #ead5d8;
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  color: #563747;
+}
+
+.preset:hover {
+  transform: translateY(-2px);
+  border-color: #b77a91;
+}
+
+.preset-preview {
+  width: 100%;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* ---------- CUSTOMIZE VIEW ---------- */
+
+.custom-options {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 35px 0;
+}
+
+.custom-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.custom-color label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #563747;
+}
+
+.custom-color input[type="color"] {
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border: 3px solid #ead5d8;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.back-to-presets {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #6f3d57;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+/* ---------- QR SIZE ---------- */
+
+.customization {
+  margin-top: 25px;
+}
+
+.customization > label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.customization input[type="range"] {
+  width: 100%;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.design-buttons {
+  margin-top: 30px;
+}
+
+.design-buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #6f3d57;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
